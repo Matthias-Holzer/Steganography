@@ -11,6 +11,7 @@ You never know what you don't see. This is just a normal image, right? Well, wha
 You will not find it by zooming in or staring long enough at it. To find the information I have to tell you where I hid it. 
 
 Every image consists of pixels
+
 ![pixels](doc/img2.png)
 
 Every pixel consists of a red a green and a blue value (RGB)
