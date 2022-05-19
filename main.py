@@ -7,7 +7,8 @@ def encode():
     img = Image.open("img.jpg")
     arr = np.array(img, dtype=np.uint8)
     bina = np.unpackbits(arr[..., None], axis=-1)
-    mes = "Geil"
+    file = open("message.txt", "r")
+    mes = file.read()
     bmes = "".join(f"{ord(i):08b}" for i in mes)
     bmes += "00011010"  # End Of File ascii
     c = 0
@@ -44,6 +45,7 @@ def decode():
             break
         mes += chr(dec)
 
+    print("The hidden message inside the given image is: ")
     print(mes)
 
 
